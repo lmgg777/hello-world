@@ -23,6 +23,12 @@ img {
     max-width: 100%;
 }
 
+@media (min-width: 77rem) {
+    img {
+        height: 20rem;
+    }
+}
+
 .contenedor {
     width: 95%;
     max-width: 120rem;
@@ -110,7 +116,7 @@ h4 {
 }
 
 .site-header.inicio {
-    background: url(../img/banner.jpg);
+    background-image: url(../img/banner.jpg);
     background-position: center center;
     background-size: cover;
     height: 100vh;
@@ -124,8 +130,17 @@ h4 {
     text-decoration: none;
 }
 
+@media (min-width: 77rem) {}
+
 .site-header h1 {
     font-weight: 400;
+    margin: 0 auto;
+}
+
+@media (min-width: 77rem) {
+    .site-header h1 {
+        margin: 0;
+    }
 }
 
 .site-header h1 span {
@@ -355,6 +370,10 @@ h4 {
 
 /*Anuncios*/
 
+.contenedor-anuncios img {
+    height: 20rem;
+}
+
 @media (min-width: 77rem) {
     .contenedor-anuncios {
         display: flex;
@@ -414,61 +433,55 @@ h4 {
     justify-content: flex-end;
 }
 
+.ver-todas a {
+    margin-top: 0;
+}
+
 
 /* Contacto */
 
-.imagen-contacto {
-    background-image: url(../img/contacto.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 30rem;
-    display: flex;
-    align-items: center;
-}
-
-@media (min-width: 77rem) {
-    .imagen-contacto {
-        height: 40rem;
-    }
-}
-
 .contenido-contacto {
-    flex: 0 0 95%;
-    color: #FFFFFF;
+    background-image: url(../img/contacto_min.jpg);
+    background-position: center center;
+    background-size: 40rem;
+    background-repeat: no-repeat;
+    background-color: #423934;
+    height: 20rem;
 }
 
 .contenido-contacto h2 {
+    font-size: 2.2rem;
     text-align: center;
-    position: relative;
-    bottom: 5rem;
+    color: #D14F1A;
+    padding-top: 1rem;
+    margin-bottom: 9rem;
 }
 
 .contenido-contacto p {
     font-size: 2.2rem;
-    position: relative;
-    top: 8rem;
+    text-align: center;
+    color: #D14F1A;
+    margin: 0;
+    line-height: 1;
 }
 
 .contenido-contacto a {
-    position: relative;
-    top: 5rem;
+    background-color: #D14F1A;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    display: block;
+    margin-top: 1.6rem;
 }
 
 @media (min-width: 77rem) {
-    .contenido-contacto h2 {
-        text-align: center;
-        position: relative;
-        bottom: 10rem;
-    }
-    .contenido-contacto p {
-        font-size: 2.2rem;
-        position: relative;
-        top: 18.5rem;
-    }
     .contenido-contacto a {
+        display: unset;
         position: relative;
-        left: 73rem;
-        top: 10rem;
+        bottom: 9rem;
+        left: 103rem;
     }
 }
 
@@ -477,7 +490,17 @@ h4 {
 
 .site-footer {
     background-color: #423934;
-    margin: 0;
+    margin-top: 6.6rem;
+}
+
+.site-footer-catalogo {
+    background-color: #423934;
+}
+
+@media (min-width: 77rem) {
+    .site-footer {
+        margin: 0;
+    }
 }
 
 .contenedor-footer {
